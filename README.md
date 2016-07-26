@@ -92,8 +92,6 @@ git push origin master
 用户名汇总
 --------
 
-[点击这里我你可以链接到我的博客](http://guoyunsky.iteye.com)
-
 | 姓名       | 用户名          |
 | ---------- | --------------  |
 | 李彦俊     | [yanjun0501](https://github.com/yanjun0501)      |
