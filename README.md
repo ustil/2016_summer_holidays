@@ -1,5 +1,45 @@
 #15级2016年暑假作业
 
+2016年7月27日作业
+1.队列是一种连续的存储结构，存入数据只能从一端（称为尾部）进入，取出数据则只能从另一端（头部）取出。根据下述描述实现一个自定义的队列类:  
+  
+class Queue  
+{   
+  public:   
+    Queue (int size = 10);      //构造函数   
+    ~Queue ();      //析构函数   
+    bool empty () const { return front == rear; }  //队列是否为空   
+    bool full() const;        //队列是否已满   
+    int size () const;        //队列中元素的个数   
+    void push (int);      //插入一个元素   
+    int pop ();      //弹出一个元素   
+  private:   
+    int* data;         //数据区   
+    int front， rear;           //首尾位置   
+    int capacity;               //数据区容量   
+};  
+  
+2.集合是一类数据的聚合体，根据下述描述实现一个集合类的定义：   
+  
+const int SetCapacity = 100;   
+class set   
+{   
+    int elements[SetCapacity];  //数据区   
+    int size;          //元素个数   
+  public:   
+    set();             //构造函数   
+    set(const set& src);     //拷贝构造函数   
+    bool Contains(int el);    //是否包含元素el   
+    bool Add(int el);      //添加元素el   
+    bool Remove(int el);    //删除元素el   
+    void Assign(set& st);    //将st赋值给当前集合   
+    bool EqualTo(set& st);    //判别集合st与当前集合是否相同（元素相同  
+    bool Empty();        //集合是否为空   
+set Intersect(set& st);   //求集合st 与当前集合的交集  
+    set Union(set& st);     //求集合st 与当前集合的并集   
+    void print();        //显示集合的所有元素   
+};   
+  
 2016年7月26日作业
 --------
 1.设计一个三角形处理类，包含三条边长为数据成员，实现并测试这个类。  
