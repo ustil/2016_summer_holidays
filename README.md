@@ -92,15 +92,17 @@ git push origin master
 用户名汇总
 --------
 
+[点击这里我你可以链接到我的博客](http://guoyunsky.iteye.com)
+
 | 姓名       | 用户名          |
 | ---------- | --------------  |
-| 李彦俊     | yanjun0501      |
-| 李想       | lixiang521      |
-| 于雷       | classmateyulei  |
-| 梁琬琳     | cherry19970526  |
-| 李嘉兴     | 645309823       |
-| 王婷婷     | wangtingting111 |
-| 龙禹含     | 929624414       |
-| 薛明奇     | xuemingqi       |
-| 金裴阳     | youngjin1997    |
+| 李彦俊     | [yanjun0501](https://github.com/yanjun0501)      |
+| 李想       | [lixiang521](https://github.com/lixiang521)      |
+| 于雷       | [classmateyulei](https://github.com/classmateyulei)  |
+| 梁琬琳     | [cherry19970526](https://github.com/cherry19970526)  |
+| 李嘉兴     | [645309823](https://github.com/645309823)       |
+| 王婷婷     | [wangtingting111](https://github.com/wangtingting111) |
+| 龙禹含     | [929624414](https://github.com/929624414)       |
+| 薛明奇     | [xuemingqi](https://github.com/xuemingqi)       |
+| 金裴阳     | [youngjin1997](https://github.com/youngjin1997)    |
 | ...        | ...             |
