@@ -1,6 +1,48 @@
 #15级2016年暑假作业
 
-2016年7月27日作业
+2016年7月28日作业
+--------
+1.大整数计算程序设计：当一个整数超过了系统提供的整型数据的表示范围时，可以考虑用若干个整型数“拼接”而成，也可以采用字符串来存放。试根据如下梗概描述设计一个大整数类，并编写相应的方法。   
+  
+class LongInt   
+{   
+    int size;   
+    char* data;        //采用字符串存放   
+  public:   
+    LongInt(){ size = 0; data = 0; }   
+    LongInt(char* s);    //由字符串构造大整数对象   
+    LongInt(long num);    //构造一个指定长度的大整数对象  
+    LongInt(LongInt& li);  //拷贝构造函数   
+    ~LongInt();        //析构函数   
+    LongInt read();      //从键盘读入大整数   
+    void write();      //输出大整数   
+    LongInt add(LongInt& li);  //大整数求和   
+    LongInt& operator=(const LongInt& li);   
+};   
+  
+LongInt& LongInt::operator=(const LongInt& li)   
+{   
+  if(this == &li)   
+    return *this;   
+  delete[] data;   
+  size = li.size;   
+  data = new char[size+1];   
+  strcpy(data， li.data);   
+}  
+  
+2.电子时钟类:  
+设计编写一个电子时钟类ElectronicClock，包含年、月、日、时、分、秒等属性。电子时钟类由时间类和日期类组合而成，实现并测试这个类。  
+类中包括的成员函数（要完成操作）有：  
+（1）构造函数；  
+（2）析构函数；  
+（3）对时间与日期进行校验的函数，当不正确时进行纠正与改错；  
+（4）对年、月、日、时、分、秒等属性进行增加n个单位的函数。  
+提示：  
+（1）对年、月、日、时、分、秒等属性进行增加n个单位，要注意不要超出范围，进行进位;  
+（2）电子时钟类有日期类与时间类组合而成。  
+  
+2016年7月27日作业  
+--------
 1.队列是一种连续的存储结构，存入数据只能从一端（称为尾部）进入，取出数据则只能从另一端（头部）取出。根据下述描述实现一个自定义的队列类:  
   
 class Queue  
