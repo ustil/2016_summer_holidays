@@ -14,16 +14,16 @@ public:
     void judge()
     {
         if(edge1+edge2>edge3&&edge2+edge3>edge1&&edge1+edge3>edge2)
-            cout<<"ÄÜ¹¹³ÉÈı½ÇĞÎ"<<endl;
+            cout<<" èƒ½æ„æˆä¸‰è§’å½¢ "<<endl;
         else
-            cout<<"²»ÄÜ¹¹³ÉÈı½ÇĞÎ"<<endl;
+            cout<<" ä¸èƒ½æ„æˆä¸‰è§’å½¢ "<<endl;
     }
     void judge1()
     {
         if(edge1*edge1+edge2*edge2==edge3*edge3||edge1*edge1+edge3*edge3==edge2*edge2||edge2*edge2+edge3*edge3==edge1*edge1)
-            cout<<"ÄÜ¹¹³ÉÖ±½ÇÈı½ÇĞÎ"<<endl;
+            cout<<" èƒ½æ„æˆç›´è§’ä¸‰è§’å½¢ "<<endl;
         else
-            cout<<"²»ÄÜ¹¹³ÉÖ±½ÇÈı½ÇĞÎ"<<endl;
+            cout<<" ä¸èƒ½æ„æˆç›´è§’ä¸‰è§’å½¢ "<<endl;
     }
     void area()
     {
