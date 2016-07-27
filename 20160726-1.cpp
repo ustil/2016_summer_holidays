@@ -27,7 +27,7 @@ public:
     }
     void area()
     {
-        double p=(edge1+edge2+edge3)/2;
+        double p = (edge1+edge2+edge3)/2;
         cout<<sqrt(p*(p-edge1)*(p-edge2)*(p-edge3))<<endl;;
     }
 };
