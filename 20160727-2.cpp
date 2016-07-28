@@ -79,7 +79,7 @@ public:
     {
         for(int i=0;i<size;i++)
             cout<<elements[i]<<endl;
-    } //显示集合的所有元素
+    } //   显示集合的所有元素
 };
 
 int main()
