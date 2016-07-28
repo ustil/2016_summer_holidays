@@ -5,10 +5,10 @@ using namespace std;
 
 class product
 {
+public:    
     char* tag; //产品名称
     double price; //单价
     int quantity; //库存数量
-public:
     product(char *s = "",double price1 = 0,int quantity1 = 0):tag(s) , price(price1) , quantity(quantity1){}
     ~product()
     {
