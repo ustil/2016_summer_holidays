@@ -5,8 +5,8 @@ using namespace std;
 
 class Address
 {
+public:    
     string name,address,city,postnum;
-public:
     Address(string name1 = "",string address1 = "",string city1 = "",string postnum1 = ""):name(name1) , address(address1) , city(city1) , postnum(postnum1){}
     ~Address()
     {
