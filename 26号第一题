@@ -1,0 +1,45 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+class SJX
+{
+    double a,b,c;
+public:
+    SJX(double a1,double b1,double c1):a(a1),b(b1),c(c1){}
+    void pb()
+    {
+        if(a+b>c&&a+c>b&&b+c>a)
+            cout<<"是三角形"<<endl;
+        else
+            cout<<"不是三角形"<<endl;
+    }
+    void zj()
+    {
+        if(a*a+b*b==c*c||a*a+c*c==b*b||b*b+c*c==a*a)
+            cout<<"是直角三角形"<<endl;
+        else
+            cout<<"不是直角三角形"<<endl;
+    }
+    void mj()
+    {
+        double d,s;
+        d=(a+b+c)/2;
+        s=sqrt(d*(d-a)*(d-b)*(d-c));
+        cout<<s<<endl;
+    }
+    ~SJX()
+    {
+
+    }
+};
+int main()
+{
+    SJX aa(3,4,5),bb(1,2,3);
+    aa.pb();
+    aa.zj();
+    aa.mj();
+    bb.pb();
+    bb.zj();
+    bb.mj();
+    return 0;
+}
